@@ -1,7 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
+Portfolio website created by Huseyin Gundogdu @ 2020.
+
+[Portfolio Link](https://huseyin-gundogdu.vercel.app/)
 In the project directory, you can run:
 
 ### `npm start`
