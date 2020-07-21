@@ -1,10 +1,10 @@
 import React, { Component } from "react";
+import TextLoop from "react-text-loop";
+
 export default class Header extends Component {
   render() {
-    let resumeData = this.props.resumeData;
     return (
       <React.Fragment>
-        {/*generated code*/}
         <header id="home">
           <nav id="nav-wrap">
             <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
@@ -36,7 +36,7 @@ export default class Header extends Component {
               </li>
               <li>
                 <a className="smoothscroll" href="#contact">
-                  ContactMe
+                  Contact
                 </a>
               </li>
             </ul>
@@ -44,32 +44,62 @@ export default class Header extends Component {
 
           <div className="row banner">
             <div className="banner-text">
-              <h6>Hi there!</h6>
-              <h1 className="responsive-headline">I am {resumeData.name}.</h1>
+              <h1 className="responsive-headline">Huseyin Gundogdu</h1>
               <h3>
-                I am a {resumeData.role}.{resumeData.roleDescription}
+                I'm a Full Stack Engineer specialize in{" "}
+                <TextLoop
+                  className={"textloop"}
+                  interval={2500}
+                  mask={true}
+                  adjustingSpeed={800}
+                >
+                  <div>HTML/CSS</div>
+                  <div>JavaScript ES6+</div>
+                  <div>Bootstrap</div>
+                  <div>Sass</div>
+                  <div>React/Redux</div>
+                  <div>NodeJS</div>
+                  <div>Express</div>
+                  <div>Python</div>
+                  <div>MongoDB</div>
+                  <div>PostgreSQL</div>
+                  <div>GraphQL</div>
+                  <div>Webpack</div>
+                </TextLoop>
               </h3>
+
               <hr />
               <ul className="social">
-                {resumeData.socialLinks &&
-                  resumeData.socialLinks.map((item) => {
-                    return (
-                      <li key={item.name}>
-                        <a href={item.url} target="_blank">
-                          <i className={item.className}></i>
-                        </a>
-                      </li>
-                    );
-                  })}
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/huseyin-developer/"
+                    target="_blank"
+                  >
+                    <i className="fa fa-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/hgundogdu53" target="_blank">
+                    <i className="fa fa-github"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/hgundogdu53" target="_blank">
+                    <i className="fa fa-twitter"></i>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
-
-          <p className="scrolldown">
+          <div className="scrolldown">
             <a className="smoothscroll" href="#about">
-              <i className="icon-down-circle"></i>
+              <div className="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </a>
-          </p>
+          </div>
         </header>
       </React.Fragment>
     );
