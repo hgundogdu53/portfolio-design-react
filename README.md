@@ -2,8 +2,7 @@
 
 Portfolio website created by Huseyin Gundogdu @ 2020.
 
-[Portfolio Link](https://huseyin-gundogdu.vercel.app/)
-In the project directory, you can run:
+Please click on the portfolio Link: [Portfolio Link](https://huseyin-gundogdu.vercel.app/)
 
 ### `npm start`
 
